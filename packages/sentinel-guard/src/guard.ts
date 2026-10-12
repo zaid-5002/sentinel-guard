@@ -8,13 +8,13 @@ import type {
   PolicyDecision,
   PolicyRule,
   ApprovalStatus,
-} from "./types";
+} from "./types.js";
 import {
   InvalidApprovalStateError,
   InvalidPolicyError,
   UnknownActionError,
   ApprovalNotFoundError,
-} from "./errors";
+} from "./errors.js";
 
 const VALID_DECISIONS: readonly PolicyDecision[] = [
   "allow",

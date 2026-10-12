@@ -1,4 +1,4 @@
-export { createGuard, SentinelGuard } from "./guard";
+export { createGuard, SentinelGuard } from "./guard.js";
 export {
   GuardError,
   UnknownActionError,
@@ -7,7 +7,7 @@ export {
   InvalidApprovalStateError,
   InvalidPolicyError,
   HandlerError,
-} from "./errors";
+} from "./errors.js";
 export type {
   PolicyDecision,
   ApprovalStatus,
@@ -20,4 +20,4 @@ export type {
   ExecutionResult,
   ActionHandler,
   GuardOptions,
-} from "./types";
+} from "./types.js";
