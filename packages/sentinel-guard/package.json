@@ -11,11 +11,33 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "src"],
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["permissions", "authorization", "security", "policy", "guard"],
-  "license": "MIT"
+  "keywords": [
+    "permissions",
+    "authorization",
+    "security",
+    "policy",
+    "guard",
+    "enforcement",
+    "rbac",
+    "access-control"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
